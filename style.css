@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Aside */
+aside {
+    position: fixed;
+    width: 120px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.aside-container {
+    padding: 8px 0px;
+}
+
+.aside-container:hover {
+    background-color: #f44336;
+}
+
+div.aside-item {
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Main */
+main {
+    margin-left: 120px;
+}
+
+section {
+    height: 100vh;
+}
