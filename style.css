@@ -5,34 +5,43 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Aside */
-aside {
-    position: fixed;
-    width: 120px;
-    height: 100vh;
-    background-color: #343a40;
+:root {
+    --asphalt: #343a40;
+    --red: #f44336;
+}
+
+nav {
+    background-color: var(--asphalt);
     color: white;
     text-align: center;
 }
 
-.aside-container {
-    padding: 8px 0px;
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px;
 }
 
-.aside-container:hover {
-    background-color: #f44336;
+.nav-content:hover {
+    transition: 0.4s;
+    background-color: var(--red);
 }
 
-div.aside-item {
-    text-align: center;
-    font-size: 48px;
-}
+/* Media queries */
+@media screen and (min-width: 600px) {
+    nav {
+        position: fixed;
+        width: 120px;
+        height: 100vh;
+    }
 
-/* Main */
-main {
-    margin-left: 120px;
-}
+    .nav-content {
+        display: block;
+    }
 
-section {
-    height: 100vh;
+    div.aside-item {
+        font-size: 32px;
+    }
 }
