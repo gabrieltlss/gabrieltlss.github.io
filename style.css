@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 :root {
@@ -10,6 +10,7 @@
     --red: #f44336;
 }
 
+/* Header (navbar) */
 nav {
     background-color: var(--asphalt);
     color: white;
@@ -25,12 +26,100 @@ nav {
 }
 
 .nav-content:hover {
-    transition: 0.4s;
+    transition: 0.2s;
     background-color: var(--red);
+}
+
+/* Main */
+section {
+    padding: 8px;
+}
+
+/* Home section */
+.home-header {
+    background-color: var(--asphalt);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+.profile-picture {
+    max-width: 250px;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+}
+
+.personal-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* About me */
+.home-body {
+    margin: 16px 0px;
+    padding: 0px 16px;
+    max-width: 850px;
+}
+
+.about-content {
+    margin: 16px 0px;
+    text-align: justify;
+}
+
+.professional-info {
+    margin: 16px 0px;
+}
+
+.carrer-text {
+    margin: 16px 0px;
+    text-align: justify;
+}
+
+.courses-content {
+    margin: 16px 0px;
+}
+
+.courses-text {
+    margin: 16px 0px;
+}
+
+.courses-list {
+    margin: 16px 0;
+    list-style-type: none;
+}
+
+.list-title {
+    margin-bottom: 8px;
+}
+
+.courses-list li {
+    padding: 8px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+.courses-list li:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+.additional-abilities {
+    margin: 16px 0px;
 }
 
 /* Media queries */
 @media screen and (min-width: 600px) {
+    section {
+        margin-left: 120px;
+    }
+
     nav {
         position: fixed;
         width: 120px;
@@ -44,4 +133,11 @@ nav {
     div.aside-item {
         font-size: 32px;
     }
+
+    .home-header {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
 }
