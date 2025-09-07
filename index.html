@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Teles - Portifólio</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/github-mark.png" type="image/x-icon">
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
     <!-- Google icons -->
@@ -19,22 +21,31 @@
 
 <body>
     <nav>
-        <div class="nav-content">
-            <div class="material-symbols-outlined aside-item">home</div>
-            <p>Home</p>
-        </div>
-        <div class="nav-content">
-            <div class="material-symbols-outlined aside-item">token</div>
-            <p>Projetos</p>
-        </div>
-        <div class="nav-content">
-            <div class="material-symbols-outlined aside-item">mail</div>
-            <p>Contato</p>
-        </div>
+        <a href="#home" class="nav-content">
+            <span class="material-symbols-outlined aside-item">home</span>
+            <br>
+            <span>
+                Home
+            </span>
+        </a>
+        <a href="#projects" class="nav-content">
+            <span class="material-symbols-outlined aside-item">token</span>
+            <br>
+            <span>
+                Projetos
+            </span>
+        </a>
+        <a href="#contact" class="nav-content">
+            <span class="material-symbols-outlined aside-item">mail</span>
+            <br>
+            <span>
+                Contato
+            </span>
+        </a>
     </nav>
 
     <main>
-        <section>
+        <section id="home">
             <div class="home-container">
                 <div class="home-header">
                     <div class="profile-picture-container">
@@ -43,11 +54,15 @@
 
                     <div class="personal-info-container">
                         <h3 class="personal-info-title">Gabriel Teles Simões</h3>
-                        <p>
+                        <p class="personal-info-content">
+                            <span class="material-symbols-outlined">computer</span>
+                            <span>Desenvolvedor web</span>
+                        </p>
+                        <p class="personal-info-content">
                             <span class="material-symbols-outlined">location_on</span>
                             Águas Lindas de Goiás
                         </p>
-                        <p>
+                        <p class="personal-info-content">
                             <span class="material-symbols-outlined">person</span>
                             21 anos
                         </p>
@@ -101,7 +116,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects-container">
                 <h2 class="projects-title">Projetos</h2>
                 <table>
@@ -116,56 +131,55 @@
                         <tr class="table-body-row">
                             <td>Classical Course</td>
                             <td>Landing page (HTML, CSS e JavaScript)</td>
-                            <td><a href="./projects/classical_course/index.html" class="project-link-btn"
-                                    target="_blank">Classical
+                            <td><a href="./projects/classical_course/index.html" class="project-link">Classical
                                     Course</a></td>
                         </tr>
                         <tr class="table-body-row">
                             <td>Título</td>
                             <td>Descrição...</td>
-                            <td><a href="" class="project-link-btn">Link</a></td>
+                            <td><a href="" class="project-link">Link</a></td>
                         </tr>
                         <tr class="table-body-row">
                             <td>Título</td>
                             <td>Descrição...</td>
-                            <td><a href="" class="project-link-btn">Link</a></td>
+                            <td><a href="" class="project-link">Link</a></td>
                         </tr>
                         <tr class="table-body-row">
                             <td>Título</td>
                             <td>Descrição...</td>
-                            <td><a href="" class="project-link-btn">Link</a></td>
+                            <td><a href="" class="project-link">Link</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <footer class="contact">
-            <div class="contact-container">
-                <h3>Contato</h3>
-
-                <ul class="contact-list">
-                    <li>
-                        <a href="" class="footer-link">
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-link">
-                            Instagram
-                        </a>
-                    </li>
-                </ul>
-
-                <p class="copyright">
-                    <a href="https://github.com/gabrieltlss" class="github-link">
-                        <img src="./img/github-mark-white.png" alt="GitHub logo" width="20px" height="20px">
-                        GitHub
-                    </a>
-                </p>
-            </div>
-        </footer>
     </main>
+    <footer class="contact" id="contact">
+        <div class="contact-container">
+            <h3>Contato</h3>
+
+            <ul class="contact-list">
+                <li>
+                    <a href="" class="footer-link">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+
+            <p class="copyright">
+                <a href="https://github.com/gabrieltlss" class="github-link">
+                    <img src="./img/github-mark.png" alt="GitHub logo" width="20px" height="20px">
+                    GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
