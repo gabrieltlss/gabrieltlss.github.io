@@ -76,6 +76,7 @@ section {
 
 /* About me */
 .home-body {
+    background-color: white;
     padding: 16px;
 }
 
@@ -175,6 +176,7 @@ table {
 /* Contact */
 .contact {
     margin-top: 16px;
+    background-color: white;
 }
 
 .contact-container {
