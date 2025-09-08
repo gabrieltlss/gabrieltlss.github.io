@@ -16,8 +16,14 @@ html {
 
 /* Header (navbar) */
 nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--asphalt);
     text-align: center;
+
 }
 
 .nav-content {
@@ -36,9 +42,9 @@ nav {
 }
 
 /* Main */
-section {
+/* section {
     padding: 8px 0px;
-}
+} */
 
 /* Home section */
 .home-header {
@@ -219,11 +225,11 @@ span.contact-link-icon {
 @media screen and (min-width: 600px) {
     section {
         margin-left: 120px;
-        padding: 0;
     }
 
     nav {
         position: fixed;
+        display: block;
         width: 120px;
         height: 100vh;
     }
