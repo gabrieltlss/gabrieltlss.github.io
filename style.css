@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -81,7 +81,7 @@ section {
 }
 
 .about-container {
-    max-width: 850px;
+    max-width: 750px;
 }
 
 .about-content {
@@ -193,7 +193,7 @@ table {
     margin: 8px 0px;
 }
 
-.footer-link {
+.contact-link {
     color: black;
     text-align: center;
     border: 1px solid black;
@@ -203,20 +203,16 @@ table {
     display: block;
 }
 
-.footer-link:hover {
+.contact-link:hover {
     transition: 0.2s;
     background-color: var(--asphalt);
     color: white;
 }
 
-.copyright {
-    margin-top: 32px;
-    text-align: center;
+span.contact-link-icon {
+    font-size: 16px;
 }
 
-.github-link {
-    color: black;
-}
 
 
 /* Media queries */
