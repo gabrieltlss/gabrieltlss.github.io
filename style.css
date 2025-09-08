@@ -181,12 +181,11 @@ table {
 
 /* Contact */
 .contact {
-    margin-top: 16px;
     background-color: white;
 }
 
 .contact-container {
-    padding: 24px;
+    padding: 32px 24px;
 }
 
 .contact-list {
