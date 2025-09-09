@@ -175,8 +175,22 @@ table {
     background-color: var(--red);
 }
 
-.project-link {
+.project-link-btn {
+    width: 100%;
+    display: block;
+    padding: 4px;
+    border: 1px solid var(--red);
+    background-color: #f44336;
     color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-link-btn:hover {
+    transition: 0.2s;
+    border: 1px solid white;
+    background-color: var(--asphalt);
 }
 
 /* Contact */
