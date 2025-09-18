@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body id="home">
@@ -79,7 +85,7 @@
 
                     <div class="professional-info">
                         <div class="carrer-content">
-                            <h2 class="carrer-title">Experiencias profissionais</h2>
+                            <h2 class="carrer-title">Experiências profissionais</h2>
                             <div class="carrer-text">
                                 <p>
                                     - Estágio - Instituto Nacional de Seguridade Social (INSS) - de Dez/2020 à Dez/2021
@@ -142,27 +148,16 @@
                             </td>
                         </tr>
                         <tr class="table-body-row">
-                            <td>Título</td>
-                            <td>Descrição...</td>
-                            <td>
-                                <a href="#projects" class="project-link-btn">
-                                    Demo
-                                </a>
-                                <br>
-                                <a href="#projects" class="project-link-btn">
-                                    Repositório
-                                </a>
+                            <td>Back-end para portfólio</td>
+                            <td>Back-end para envio de e-mails usando SendGrid.
                             </td>
-                        </tr>
-                        <tr class="table-body-row">
-                            <td>Título</td>
-                            <td>Descrição...</td>
                             <td>
-                                <a href="#projects" class="project-link-btn">
+                                <a href="#contact" class="project-link-btn">
                                     Demo
                                 </a>
                                 <br>
-                                <a href="#projects" class="project-link-btn">
+                                <a href="https://github.com/gabrieltlss/gabrieltlss-contact-api"
+                                    class="project-link-btn" target="_blank">
                                     Repositório
                                 </a>
                             </td>
@@ -189,8 +184,8 @@
                 </div>
 
                 <div class="form-section">
-                    <textarea name="message" id="message-area" placeholder="Insira o texto" maxlength="500"
-                        required></textarea>
+                    <textarea name="message" id="message-area" placeholder="Insira o texto (de 10 à 500 caracteres)"
+                        minlength="10" maxlength="500" required></textarea>
                 </div>
 
                 <div class="form-section">

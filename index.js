@@ -17,29 +17,30 @@ contactForm.addEventListener("submit", async (ev) => {
         feedbackElem.style.color = "black";
         feedbackElem.textContent = "Enviando...";
 
-        const response = await fetch("http://localhost:3000/contact", {
+        const response = await fetch("https://gabrieltlss-contact-api.onrender.com/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, message })
-        })
+        });
 
         const result = await response.json();
 
         if (result.message) {
-            feedbackElem.textContent = "E-mail enviado com sucesso!";
+            feedbackElem.textContent = result.message;
             feedbackElem.style.color = "green";
             form.reset();
             timeOutID = setTimeout(() => { feedbackElem.textContent = "" }, 3 * 1000);
         } else if (result.error) {
-            feedbackElem.textContent = "E-mail não enviado!";
+            feedbackElem.textContent = result.error;
             feedbackElem.style.color = "red";
-            form.reset();
             timeOutID = setTimeout(() => { feedbackElem.textContent = "" }, 3 * 1000);
+        } else if (result.inputError) {
+            feedbackElem.textContent = `${result.inputError}`;
+            feedbackElem.style.color = "red";
         }
     } catch (error) {
         feedbackElem.textContent = "Erro no servidor!";
         feedbackElem.style.color = "red";
-        form.reset();
         timeOutID = setTimeout(() => { feedbackElem.textContent = "" }, 3 * 1000);
     }
 })
