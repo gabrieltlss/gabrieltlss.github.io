@@ -17,7 +17,7 @@ contactForm.addEventListener("submit", async (ev) => {
         feedbackElem.style.color = "black";
         feedbackElem.textContent = "Enviando...";
 
-        const response = await fetch("https://contact-api.gabrieltlss.com.br/send", {
+        const response = await fetch("https://contact-api.gabrieltlss.com.br/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, message })
